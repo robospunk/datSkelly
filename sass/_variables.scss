@@ -1,0 +1,17 @@
+$shadow: 0 10px 10px -6px rgba(0, 0, 0, 0.06),
+        0 2px 16px rgba(0,0,0,.1);
+
+$inshadow: inset 0 2px 16px rgba(0,0,0,.1);
+
+// $quote: 43px 37px 0 -40px $primary;
+
+%center {
+        margin-left: auto !important;
+        margin-right: auto !important;
+}
+
+$wrap: 1200px;
+
+$transition: all 200ms ease-in-out;
+
+$radius: .25rem;

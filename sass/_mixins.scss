@@ -1,0 +1,38 @@
+// breakpoints
+
+$smView: 580px;
+
+$mdView: 780px;
+
+$lgView: 1000px;
+
+$xlView: 1200px;
+
+// breakpoints
+
+@mixin sm {
+    @media (min-width: $smView) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: $mdView) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: $lgView) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: $xlView) {
+        @content;
+    }
+}
+
+
+
