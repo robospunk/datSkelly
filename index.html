@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Library</title>
+</head>
+<body>
+    <header>
+        <nav class="fixed primary">
+            <a href=""><h1>Dat Style Library</h1></a>
+            <button class="collapseToggle">Menu</button>
+            <div class="collapse flex btns">
+                <a href="sandbox.html" target="_blank">My Sandbox</a>
+                <a href="index.html#semantic">Semantic Tags</a>
+                <a href="index.html#grid">Grid</a>
+                <a href="index.html#modals">Modals</a>
+                <a href="index.html#forms">Forms</a>
+                <div class="dropdown">
+                    <button>Dropdown</button>
+                    <ul>
+                        <li><a href="">Link1</a></li>
+                        <li><a href="">Link2</a></li>
+                        <li><a href="">Link3</a></li>
+                        <div class="dropdown">
+                            <button>Another</button>
+                            <ul>
+                                <li><a href="">linky</a></li>
+                                <li><a href="">slinky</a></li>
+                                <li><a href="">binky</a></li>
+                                <div class="dropdown">
+                                    <button>Droppy</button>
+                                    <ul>
+                                        <li><a href="">nother</a></li>
+                                        <li><a href="">bother</a></li>
+                                        <li><a href="">fother</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- text -->
+        <section id="text">
+            <h2>Text Styling</h2>
+            <!-- headings -->
+            <section>
+                <h3>Headings</h3>
+                <div class="border contentWidth center">
+                    <h1>heading 1</h1>
+                    <h2>heading 2</h2>
+                    <h3>heading 3</h3>
+                    <h4>heading 4</h4>
+                    <h5>heading 5</h5>
+                    <h6>heading 6</h6>
+                </div>
+    
+                <p class="semi tmd tcenter">Headings are capitalized and aligned center by default.</p>
+                <div class="tright contentWidth center">
+                        <p>For lowercase add the class <code>"lowercase"</code></p>
+                        <p>For uppercase, <code>"uppercase"</code></p>
+                        <p>To capitalize, <code>"capitalize"</code></p>
+                        <p>And to remove any text-transforming, add the class <code>"nocase"</code></p>
+                </div>
+            </section>
+
+            <!-- paragraphs and alignments -->
+            <section>
+                <h3>Text Styling</h3>
+
+                <!-- alignment -->
+                <section>
+                    <h4>Alignment</h4>
+                    <p class="tcenter">If you'd like to change the default alignment, you can add these classes:</p>
+                    <div class="tleft border">
+                        <p>
+                            Add the class <code>"tleft"</code> to align left.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iste deserunt ipsa enim. Repellendus, voluptatibus nihil nostrum minima quod sed!
+                        </p>
+                    </div>
+                    <div class="tcenter border">
+                        <p>
+                            Add the class <code>"tcenter"</code> to align center.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iste deserunt ipsa enim. Repellendus, voluptatibus nihil nostrum minima quod sed!
+                        </p>
+                    </div>
+                    <div class="tright border">
+                        <p>
+                            Add the class <code>"tright"</code> to align right.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iste deserunt ipsa enim. Repellendus, voluptatibus nihil nostrum minima quod sed!
+                        </p>
+                    </div>
+                    <div class="tjustify border">
+                        <p>
+                            Add the class <code>"tjustify"</code> to make each line space evenly from the left to right EXCEPT for the last line.
+                            Justify only starts working if you adding to something longer than one line.
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugit corrupti ullam aut ex natus dolor dolore inventore consequatur, maiores assumenda perspiciatis voluptates possimus tenetur! Dolor distinctio beatae fugiat ea nesciunt doloribus reprehenderit, cupiditate ratione, amet consequatur vel, voluptates quisquam?
+                        </p>
+                    </div>
+                </section>
+
+                <!-- font-size -->
+                <section>
+                    <h4>Font size</h4>
+                    <p class="tcenter">
+                        If you'd like to change the default font size, you can add these classes:
+                    </p>
+                    <p class="tsm">
+                        Add the class <code>"tsm"</code> for small text.
+                    </p>
+                    <p class="treg">
+                        Add the class <code>"treg"</code> for normal 1rem text.
+                    </p>
+                    <p class="tmd">
+                        Add the class <code>"tmd"</code> for medium text.
+                    </p>
+                    <p class="tlg">
+                        Add the class <code>"tlg"</code> for large text.
+                    </p>
+                    <p class="txl">
+                        Add the class <code>"txl"</code> for extra large text.
+                    </p>
+                </section>
+
+                <!-- font-weight -->
+                <section>
+                    <h4>Font weight and decoration</h4>
+                    <p class="tcenter">
+                        If you'd like to change the weight or decoration, use these clases:
+                    </p>
+                    <p class="wlight">
+                        Add the class <code>"wlight"</code> for light weight text.
+                    </p>
+                    <p class="wreg">
+                        Add the class <code>"wreg"</code> for normal weight text.
+                    </p>
+                    <p class="semi">
+                        Add the class <code>"semi"</code> for semi-bold text.
+                    </p>
+                    <p class="bold">
+                        Add the class <code>"bold"</code> for bold text.
+                    </p>
+                    <p class="italic">
+                        Add the class <code>"italic"</code> for italicized text.
+                    </p>
+                    <p class="underline">
+                        Add the class <code>"underline"</code> for underlined text.
+                    </p>
+                </section>
+            </section>
+        </section>
+
+        <!-- semantic elements -->
+        <section id="semantic">
+            <div>
+                <h2>Semantic Elements</h2>
+
+                <p>
+                    This library is about speed, which means you can write HTML without adding any classes, and it should look good.
+                </p>
+                <p>
+                    Classes are optional.
+                </p>
+                <p>
+                    With this being said, you should be using semantic elements for this to work correctly.
+                </p>
+                <div class="border center contentWidth">
+                    <p class="tmd">
+                        <a href="">&lt;header&gt;</a>
+                    </p>
+                    <p class="tmd">
+                        <a href="#nav">&lt;nav&gt;</a>
+                    </p>
+                    <p class="tmd">
+                        <a href="">&lt;main&gt;</a>
+                    </p>
+                    <p class="tmd">
+                        <a href="">&lt;section&gt;</a>
+                    </p>
+                    <p class="tmd">
+                        <a href="">&lt;article&gt;</a>
+                    </p>
+                    <p class="tmd">
+                        <a href="">&lt;aside&gt;</a>
+                    </p>
+                    <p class="tmd">
+                        <a href="">&lt;footer&gt;</a>
+                    </p>
+                </div>
+                <section>
+                    <h3>Tests</h3>
+                    <h6>Figure and figcaption</h6>
+                    <figure>
+                        <img src="https://unsplash.it/800" alt="thing">
+                        <figcaption>Its a purdy picher</figcaption>
+                    </figure>
+
+                    <hr>
+
+                    <h6>Blockquotes</h6>
+                    <blockquote>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quasi reiciendis harum tempora molestiae mollitia ab corporis, dolores necessitatibus fugit.
+                        <cite>Ding dong</cite>
+                    </blockquote>
+                </section>
+            </div>
+        </section>
+
+        <!-- colors -->
+        <section>
+            <h2>Colors</h2>
+        
+            <div class="pad primary m1"></div>
+        
+            <div class="pad invert m1"></div>
+
+            <div class="pad accent m1"></div>
+        
+            <div class="pad success m1"></div>
+        
+            <div class="pad danger m1"></div>
+        </section>
+
+        <!-- buttons -->
+        <section class="tcenter">
+            <h2>Buttons</h2>
+            <p>Buttons and anchor tags are styled to look the same.</p>
+            <p>By default, they do not have a background color or outline.</p>
+
+            <div class="flex column border contentWidth center">
+                <button>&lt;button&gt;</button>
+                <a href="" class="m1">&lt;a&gt;</a>
+                <button class="btn">&lt;button class=&quot;btn&quot;&gt;</button>
+                <a class="btn">&lt;a class=&quot;btn&quot;&gt;</a>
+            </div>
+
+            <p>You can style buttons individually with the class <code>"btn"</code></p>
+            <p>Or in groups <code>"btns"</code></p>
+
+            <!-- formatted code explaining button classes -->
+<code>&lt;div class=&quot;btns&quot;&gt;&#13;&#10;    &lt;a&gt;button 1&lt;/a&gt;&#13;&#10;    &lt;a&gt;button 2&lt;/a&gt;&#13;&#10;    &lt;a&gt;button 3&lt;/a&gt;&#13;&#10;&lt;/div&gt;</code>
+
+            <p>The code above would output this:</p>
+
+            <div class="flex border contentWidth center">
+                <div class="btns">
+                    <a>button 1</a>
+                    <a>button 2</a>
+                    <a>button 3</a>
+                </div>
+            </div>
+
+            <hr>
+
+            <p class="tcenter">
+                By default, the class <code>"btn"</code> makes the button have a primary background color.
+                <br>
+                Here are a few other options:
+            </p>
+
+            <div class="flex border contentWidth center">
+                <div>
+                    <a class="btn">class of "btn"</a>
+                    <a class="btn success">class of "btn success"</a>
+                    <a class="btn danger">class of "btn danger"</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- navigation -->
+        <section id="nav">
+            <h2>navigation</h2>
+
+            <!-- standard -->
+            <section>
+                <h3>Standard Nav</h3>
+                <p class="tcenter">
+                    The standard nav without any classes is set to <code>display: flex</code>
+                    <br>It will disperse it's first children evenly using <code>justify-content: space-between</code>
+                </p>
+
+<!-- code snippet -->
+<code>&lt;nav class=&quot;primary&quot;&gt;&#13;&#10;    &lt;a&gt;link1&lt;/a&gt;&#13;&#10;    &lt;a&gt;link2&lt;/a&gt;&#13;&#10;    &lt;a&gt;link3&lt;/a&gt;&#13;&#10;&lt;/nav&gt;</code>
+
+                <p class="tcenter">Outputs</p>
+
+                <nav class="primary">
+                    <a>link1</a>
+                    <a>link2</a>
+                    <a>link3</a>
+                </nav>
+
+                <hr>
+
+                <p class="tcenter">
+                    If you want to cluster buttons, you can wrap button groups in divs with a class of <code>"flex"</code>
+                </p>
+
+<!-- code snippet -->
+<code>&lt;nav class=&quot;primary&quot;&gt;&#13;&#10;    &lt;a&gt;Home&lt;/a&gt;&#13;&#10;    &lt;div class=&quot;flex&quot;&gt;&#13;&#10;        &lt;a&gt;link1&lt;/a&gt;&#13;&#10;        &lt;a&gt;link2&lt;/a&gt;&#13;&#10;        &lt;a&gt;link3&lt;/a&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;&lt;/nav&gt;</code>
+
+                <p class="tcenter">Outputs</p>
+
+                <nav class="primary">
+                    <a>Home</a>
+                    <div class="flex">
+                        <a>link1</a>
+                        <a>link2</a>
+                        <a>link3</a>
+                    </div>
+                </nav>
+
+                <hr>
+
+                <p class="tcenter">
+                    Add a class of <code>"active"</code> to a link to show that you are currently on that page.
+                </p>
+
+                <nav class="primary">
+                    <a>link1</a>
+                    <a class="active">link2</a>
+                    <a>link3</a>
+                </nav>
+            </section>
+
+            <!-- collapsable -->
+            <section>
+                <h3>Collapsable Nav</h3>
+
+                <p class="tcenter">
+                    To have a menu that collapses at small screen widths, wrap your links in a div with the class of <code>"collapse"</code> and make sure the nav contains a button with the class of <code>"collapseToggle"</code>
+                </p>
+
+<code>&lt;nav class=&quot;primary&quot;&gt;&#13;&#10;    &lt;a&gt;Home&lt;/a&gt;&#13;&#10;&#13;&#10;    &lt;button class=&quot;collapseToggle&quot;&gt;Menu&lt;/button&gt;&#13;&#10;&#13;&#10;    &lt;div class=&quot;collapse&quot;&gt;&#13;&#10;        &lt;a&gt;link1&lt;/a&gt;&#13;&#10;        &lt;a&gt;link2&lt;/a&gt;&#13;&#10;        &lt;a&gt;link3&lt;/a&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;&lt;/nav&gt;&#13;&#10;&#13;&#10;&lt;!-- OR --&gt;&#13;&#10;&#13;&#10;&lt;div class=&quot;nav primary btns&quot;&gt;&#13;&#10;    &lt;a&gt;Home&lt;/a&gt;&#13;&#10;&#13;&#10;    &lt;button class=&quot;collapseToggle&quot;&gt;Menu&lt;/button&gt;&#13;&#10;&#13;&#10;    &lt;div class=&quot;collapse&quot;&gt;&#13;&#10;        &lt;a&gt;link1&lt;/a&gt;&#13;&#10;        &lt;a&gt;link2&lt;/a&gt;&#13;&#10;        &lt;a&gt;link3&lt;/a&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;&lt;/div&gt;</code>
+
+                <p class="tcenter">Outputs</p>
+
+                <nav class="primary">
+                    <a>Home</a>
+
+                    <button class="collapseToggle">Menu</button>
+
+                    <div class="collapse">
+                        <a>link1</a>
+                        <a>link2</a>
+                        <a>link3</a>
+                    </div>
+                </nav>
+
+                <div class="nav primary btns">
+                    <a>Home</a>
+
+                    <button class="collapseToggle">Menu</button>
+
+                    <div class="collapse">
+                        <a>link1</a>
+                        <a>link2</a>
+                        <a>link3</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Grid -->
+        <section id="grid">
+            <h3>Grid</h3>
+            <section>
+                <p>The grid is flex based and uses 10 columns. <strong>Screens with a width 580px or smaller will ignore grid rules.</strong> </p>
+                
+                <p>To start a grid, make a div with a class of <code>"row"</code></p>
+                
+                <p>The direct children of this div will be affected by grid rules. By default, children of <code>"row"</code> will
+                    distribute space horizontally and evenly if space allows for it. If there is not enough space, chidlren will wrap
+                    to the next line.</p>
+                
+<!-- code snippet -->
+<code>&lt;div class=&quot;row&quot;&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;1&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;2&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;3&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;4&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;5&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;6&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;7&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;8&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;9&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border&quot;&gt;10&lt;/div&gt;&#13;&#10;&lt;/div&gt;</code>
+                
+                <p class="tcenter">Outputs</p>
+                
+                <div class="row">
+                    <div class="border">1</div>
+                    <div class="border">2</div>
+                    <div class="border">3</div>
+                    <div class="border">4</div>
+                    <div class="border">5</div>
+                    <div class="border">6</div>
+                    <div class="border">7</div>
+                    <div class="border">8</div>
+                    <div class="border">9</div>
+                    <div class="border">10</div>
+                </div>
+            </section>
+
+            <section>
+                <p>To change the column width, add one of the following classes to the direct child of <code>"row"</code>:</p>
+                <p>
+                    <code>"col10"</code>
+                    <code>"col20"</code>
+                    <code>"col30"</code>
+                    <code>"col40"</code>
+                    <code>"col50"</code>
+                    <code>"col60"</code>
+                    <code>"col70"</code>
+                    <code>"col80"</code>
+                    <code>"col90"</code>
+                    <code>"col100"</code>
+                </p>
+            
+                <p>The number of each class is associated with the percentage of space it will take up, if there is enough space.</p>
+            
+                <code>&lt;div class=&quot;row&quot;&gt;&#13;&#10;    &lt;div class=&quot;border col10&quot;&gt;col10&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col90&quot;&gt;col90&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col20&quot;&gt;col20&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col80&quot;&gt;col80&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col30&quot;&gt;col30&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col70&quot;&gt;col70&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col40&quot;&gt;col40&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col60&quot;&gt;col60&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col50&quot;&gt;col50&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col50&quot;&gt;col50&lt;/div&gt;&#13;&#10;    &lt;div class=&quot;border col100&quot;&gt;col100&lt;/div&gt;&#13;&#10;&lt;/div&gt;</code>
+            
+                <p class="tcenter">Outputs</p>
+            
+                <div class="row">
+                    <div class="border col10">col10</div>
+                    <div class="border col90">col90</div>
+                    <div class="border col20">col20</div>
+                    <div class="border col80">col80</div>
+                    <div class="border col30">col30</div>
+                    <div class="border col70">col70</div>
+                    <div class="border col40">col40</div>
+                    <div class="border col60">col60</div>
+                    <div class="border col50">col50</div>
+                    <div class="border col50">col50</div>
+                    <div class="border col100">col100</div>
+                </div>
+            
+            </section>
+        </section>
+
+        <!-- modals -->
+        <section id="modals">
+            <h3>Modals</h3>
+            <button class="modalBtn btn">Modal</button>
+            <div class="modal">
+                <p class="txl tcenter">
+                    Hey there. I'm a modal.
+                    <br>
+                    Click outside the box to exit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat eligendi expedita molestiae nam delectus natus, ex, laborum commodi incidunt reiciendis reprehenderit modi mollitia molestias consequatur consequuntur quas quisquam amet! Ad omnis fugiat officiis nulla harum reiciendis corrupti, dolor rem quas eaque facere maiores quos blanditiis dolorem beatae, consectetur aperiam! Aspernatur?
+                </p>
+            </div>
+
+            <p>Making a modal is simple.</p>
+            <p>First, make a button with the class of <code>"modalBtn"</code>, then put a div after it with a class of <code>"modal"</code>. This div will only be visible when you press the button before it.</p>
+
+            <!-- code snippet -->
+<code>&lt;button class=&quot;modalBtn btn&quot;&gt;Example Modal&lt;/button&gt;&#13;&#10;&lt;div class=&quot;modal&quot;&gt;&#13;&#10;    &lt;p class=&quot;tlg&quot;&gt;&#13;&#10;        Do you like this example?&#13;&#10;    &lt;/p&gt;&#13;&#10;&lt;/div&gt;</code>
+
+            <p class="tcenter">Outputs</p>
+
+            <button class="modalBtn btn">Example Modal</button>
+            <div class="modal">
+                <p class="tlg">
+                    Do you like this example?
+                </p>
+            </div>
+        </section>
+
+        <!-- forms -->
+        <section id="forms">
+            <h3>Forms</h3>
+
+            <form action="">
+                <fieldset>
+                    <h4>This is a fieldset</h4>
+                    <p class="tcenter">
+                        Wrap fields in a fieldset tag to group them together, like this.
+                    </p>
+
+                    <label>Email</label>
+                    <input type="email">
+
+                    <label>Message</label>
+                    <textarea></textarea>
+
+                    <input type="submit" value="submit">
+                </fieldset>
+
+                <fieldset>
+                    <legend>This a legend</legend>
+                    <p class="tcenter">You can wrap text in legend tags to add a title to a fieldset. A legend must be placed inside a fieldset.</p>
+                    <p class="tcenter">
+                        The default font-size of a legend is 1.6rem, but you can use style classes to change size as well as putting a h1-h6 tag within a legend.
+                    </p>
+                
+                    <label>Email</label>
+                    <input type="email">
+                
+                    <label>Message</label>
+                    <textarea></textarea>
+                
+                    <input type="submit" value="submit">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Notes</legend>
+
+                    <div class="note">
+                        <p>This is a note</p>
+                    </div>
+
+                    <p class="tcenter">
+                        You can add a note by adding the class <code>"note"</code> to a div, paragraph or h1-h6.
+                    </p>
+
+                    <p class="tcenter">
+                        Notes are aligned right by default. To put one on the left, use the class <code>"noteLeft"</code> instead.
+                    </p>
+
+                    <p class="note">This is a paragraph</p>
+
+                    <h4 class="note">This is an h4</h4>
+
+                    <p class="noteLeft">This note is on the left</p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Checkbox and Radio</legend>
+                    <p class="tcenter">
+                        If you want your checkbox or radio inputs to display next to its label, you must wrap it in a div with the class of <code>"check"</code> or <code>"radio"</code>.
+                    </p>
+                    <p class="tcenter">
+                        The classes check and radio technically do the same thing, therfore they are interchangeable
+                    </p>
+
+                    <!-- code snippet -->
+<code>&lt;div class=&quot;check&quot;&gt;&#13;&#10;    &lt;input type=&quot;checkbox&quot; value=&quot;check1&quot; name=&quot;check&quot;&gt;&#13;&#10;    &lt;label&gt;Checkbox 1&lt;/label&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;check&quot;&gt;&#13;&#10;    &lt;input type=&quot;checkbox&quot; value=&quot;check2&quot; name=&quot;check&quot;&gt;&#13;&#10;    &lt;label&gt;Checkbox 2&lt;/label&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;check&quot;&gt;&#13;&#10;    &lt;input type=&quot;checkbox&quot; value=&quot;check3&quot; name=&quot;check&quot;&gt;&#13;&#10;    &lt;label&gt;Checkbox 3&lt;/label&gt;&#13;&#10;&lt;/div&gt;</code>
+
+                    <p class="tcenter">Outputs</p>
+
+                    <div class="check">
+                        <input type="checkbox" value="check1" name="check">
+                        <label>Checkbox 1</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" value="check2" name="check">
+                        <label>Checkbox 2</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" value="check3" name="check">
+                        <label>Checkbox 3</label>
+                    </div>
+
+                    <hr>
+
+                    <!-- code snippet -->
+<code>&lt;div class=&quot;check&quot;&gt;&#13;&#10;    &lt;input type=&quot;radio&quot; value=&quot;radio1&quot; name=&quot;radio&quot;&gt;&#13;&#10;    &lt;label&gt;Radio 1&lt;/label&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;check&quot;&gt;&#13;&#10;    &lt;input type=&quot;radio&quot; value=&quot;radio2&quot; name=&quot;radio&quot;&gt;&#13;&#10;    &lt;label&gt;Radio 2&lt;/label&gt;&#13;&#10;&lt;/div&gt;&#13;&#10;&lt;div class=&quot;check&quot;&gt;&#13;&#10;    &lt;input type=&quot;radio&quot; value=&quot;radio3&quot; name=&quot;radio&quot;&gt;&#13;&#10;    &lt;label&gt;Radio 3&lt;/label&gt;&#13;&#10;&lt;/div&gt;</code>
+
+                    <p class="tcenter">Outputs</p>
+
+                    <div class="radio">
+                        <input type="radio" value="radio1" name="radio">
+                        <label>Radio 1</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" value="radio2" name="radio">
+                        <label>Radio 2</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" value="radio3" name="radio">
+                        <label>Radio 3</label>
+                    </div>
+
+                    <hr>
+
+                    <p class="tcenter">Without their containing div, they will display like this.</p>
+
+                    <label>Checkbox 1</label>
+                    <input type="checkbox" value="check1" name="check">
+
+                    <label>Checkbox 2</label>
+                    <input type="checkbox" value="check2" name="check">
+                    
+                    <label>Checkbox 3</label>
+                    <input type="checkbox" value="check3" name="check">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Advanced Field Layout</legend>
+                    <p class="tcenter">If you'd like to organize fields further, you can place them in <a href="index.html#grid">rows</a>
+                        or in divs with the class of <code>"flex"</code>.</p>
+                    <!-- code snippet  -->
+<code>&lt;div class=&quot;flex&quot;&gt;&#13;&#10;    &lt;div class=&quot;check&quot;&gt;&#13;&#10;        &lt;input type=&quot;checkbox&quot; value=&quot;check1&quot; name=&quot;check&quot;&gt;&#13;&#10;        &lt;label&gt;Check 1&lt;/label&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;check&quot;&gt;&#13;&#10;        &lt;input type=&quot;checkbox&quot; value=&quot;check2&quot; name=&quot;check&quot;&gt;&#13;&#10;        &lt;label&gt;Check 2&lt;/label&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;&lt;/div&gt;</code>
+
+                    <p class="tcenter">Outputs</p>
+
+                    <div class="flex">
+                        <div class="check">
+                            <input type="checkbox" value="check1" name="check">
+                            <label>Check 1</label>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" value="check2" name="check">
+                            <label>Check 2</label>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- code snippet -->
+<code>&lt;div class=&quot;row&quot;&gt;&#13;&#10;    &lt;div class=&quot;col40&quot;&gt;&#13;&#10;        &lt;input type=&quot;text&quot; placeholder=&quot;First Name&quot;&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;col10&quot;&gt;&#13;&#10;        &lt;input type=&quot;text&quot; placeholder=&quot;M.I.&quot;&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;    &lt;div class=&quot;col50&quot;&gt;&#13;&#10;        &lt;input type=&quot;text&quot; placeholder=&quot;Last Name&quot;&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;&lt;/div&gt;</code>
+
+                    <p class="tcenter">Outputs</p>
+
+                    <div class="row">
+                        <div class="col40">
+                            <input type="text" placeholder="First Name">
+                        </div>
+                        <div class="col10">
+                            <input type="text" placeholder="M.I.">
+                        </div>
+                        <div class="col50">
+                            <input type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <section>
+                    <h4>list of fields</h4>
+
+                    <input type="button" value="button input">
+                    
+                    <div class="check">
+                        <input type="checkbox" name="example">
+                        <label>Checkbox Input</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="example">
+                        <label>Checkbox Input</label>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="example">
+                        <label>Checkbox Input</label>
+                    </div>
+                    
+                    <label>Color Input</label>
+                    <input type="color">
+                    
+                    <label>Date Input</label>
+                    <input type="date">
+                    
+                    <label>Email Input</label>
+                    <input type="email">
+                    
+                    <label>File Input</label>
+                    <input type="file">
+                    
+                    <label>Month Input</label>
+                    <input type="month">
+                    
+                    <label>Number Input</label>
+                    <input type="number">
+                    
+                    <label>Password Input</label>
+                    <input type="password">
+                    
+                    <div class="radio">
+                        <input type="radio" name="radioExample">
+                        <label>radio Input</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="radioExample">
+                        <label>radio Input</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="radioExample">
+                        <label>radio Input</label>
+                    </div>
+                    
+                    <label>Range Input</label>
+                    <input type="range" list="ticks" min="0" max="10">
+
+                    <datalist id="ticks">
+                        <option value="0">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10">
+                    </datalist>
+
+                    <input type="reset" value="reset input">
+                    
+                    <label>Search Input</label>
+                    <input type="search">
+
+                    <label>Select</label>
+                    <select>
+                        <option selected disabled>select an option</option>
+                        <option value="option1">option1</option>
+                        <option value="option2">option2</option>
+                        <option value="option3">option3</option>
+                        <optgroup label="This is an optgroup">
+                            <option value="option4">option4</option>
+                            <option value="option5">option5</option>
+                            <option value="option6">option6</option>
+                        </optgroup>
+                    </select>
+
+                    <input type="submit" value="submit input">
+                    
+                    <label>Tel Input</label>
+                    <input type="tel">
+                    
+                    <label>Text Input</label>
+                    <input type="text">
+                    
+                    <label>Time Input</label>
+                    <input type="time">
+                    
+                    <label>URL Input</label>
+                    <input type="url">
+                    
+                    <label>Week Input</label>
+                    <input type="week">
+                    
+                    <label>Textarea</label>
+                    <textarea></textarea>
+                </section>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <a class="btn" href="https://github.com/robospunk/cssLibrary" target="_blank">Get it on Github</a>
+        </div>
+    </footer>
+
+</body>
+</html>
